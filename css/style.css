@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+a,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================= common css end ================================ */
+
+/* ============================= back to top part start ============================= */
+.scroll_btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #ed3b51;
+    color: #fff;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+/* ============================= back to top part end ============================= */
+
+/* ============================= menu part start ================================ */
+.main_menu {
+    background: #00aeaf;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 0 3px 0 #888888;
+}
+
+.menu_text li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all linear 0.2s;
+}
+
+.menu_text li a:hover {
+    color: #e8e800;
+}
+
+/* ============================= menu part end ================================ */
+
+/* ============================= Home part start ================================ */
+#home_part {
+    height: 100hv;
+    overflow: hidden;
+    position: relative;
+    min-height: 600px;
+}
+
+.video_container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    min-height: 600px;
+}
+
+.video_container video {
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.video_overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #111;
+    opacity: 0.85;
+}
+
+#home_div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.home_content h1 {
+    color: #fff;
+    padding: 30px 0;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.home_content h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.home_content h5 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.home_event_fast {
+    margin-right: 50px;
+}
+
+.home_content a {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-right: 20px;
+    padding: 7px 14px;
+    background: #e93232;
+    color: #fff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+
+.swipe_div {
+    padding: 30px 0 10px;
+}
+
+.swipe_div i {
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.swipe_div p {
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+/* ============================= Home part end ================================ */
+
+/* ============================= Counter part start ================================ */
+#counter_part {
+    padding: 60px 0;
+}
+
+.coun_div i {
+    font-size: 50px;
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    text-align: center;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    background: #999;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.coun_div p {
+    padding: 5px 0;
+}
+
+/* ============================= Counter part end ================================ */
+
+/* ============================= latest sessions part start ================================ */
+.latest_ses_div {
+    position: relative;
+}
+
+.venobox_overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+
+.venobox_overly p {
+    position: absolute;
+    left: 15px;
+    bottom: 7px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.venobox_overly a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.3;
+    -webkit-transition: all linear 0.3;
+    -moz-transition: all linear 0.3;
+    -ms-transition: all linear 0.3;
+    -o-transition: all linear 0.3;
+    opacity: 0;
+}
+
+.venobox_overly:hover a {
+    opacity: 1;
+}
+
+.venobox_overly:hover {
+    background: rgba(17, 17, 17, 0);
+}
+
+.latest_ses_div {
+    margin: 2px;
+}
+
+/* ============================= latest sessions part end ================================ */
+
+/* ============================= team part start ================================ */
+.col_ser_com p {
+    padding: 5px 0 20px;
+    font-size: 18px;
+}
+
+.col_ser_com h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#team_part {
+    padding: 40px 0;
+}
+
+.team_div {
+    border: 1px solid #555;
+}
+
+.team_text {
+    padding: 15px 0;
+}
+
+.team_text h1 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.team_text h2 {
+    font-size: 18px;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding-top: 5px;
+}
+
+.team_img {
+    position: relative;
+}
+
+.team_img .overly {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    opacity: 0;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(230, 209, 132, 0.9) 0%, rgba(238, 138, 138, 0.9) 100%);
+    transition: all linear 0.3s;
+}
+
+.team_img .overly ul a {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #fce38a;
+    color: #f38181;
+    font-size: 28px;
+    margin: 2px 0;
+    transition: all linear 0.3s;
+}
+
+.team_img .overly ul {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team_img .overly ul a:hover {
+    background: #f38181;
+    color: #fff;
+}
+
+.team_div:hover .team_img .overly {
+    opacity: 1;
+    height: 100%;
+}
+
+.team_lg_mar {
+    margin-top: 24px;
+}
+
+/* ============================= team part end ================================ */
+
+/* ============================= footer part start ================================ */
+#footer_part {
+    padding: 30px 0;
+    background: rgba(51, 62, 79);
+    color: rgba(156, 169, 190);
+}
+
+.foot_social a i {
+    background: rgba(29, 37, 49);
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 8px;
+    margin-top: 13px;
+    color: #fff;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.foot_social a:hover i {
+    background: #468af9;
+}
+
+.foot_copy p {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.foot_call i {
+    font-size: 40px;
+}
+
+.foot_call p {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.foot_call h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.con_info_mar {
+    padding: 20px 0 10px;
+}
+
+/* ============================= footer part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
